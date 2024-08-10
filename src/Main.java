@@ -10,12 +10,6 @@ class Validations {
     public static int validation1(Scanner sc) {
         while (true) {
 
-            System.out.print("Enter your Choice: ");
-            String input = sc.nextLine();
-            if (input.isEmpty()) {
-                System.out.println("Input cannot be empty. Please enter a number.");
-                continue;
-            }
             try {
                 int choice = Integer.parseInt(input);
                 if (choice < 1 || choice > 3) {
